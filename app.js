@@ -21,7 +21,7 @@ app.use(express.static(quizFolder));
 app.use(routes);
 
 
-DBConnection();
+DBConnection(app,port);
 
 // const server = https.createServer(app);
-app.listen(port,()=>console.log(`server running on port: ${port}`));
+// app.listen(port,()=>console.log(`server running on port: ${port}`));
