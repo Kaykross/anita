@@ -10,6 +10,7 @@ const media = window.matchMedia("(max-width:600px)");
 
 if(media.matches){
     btn_sign_in_overlay.onclick = e=>{
+        e.preventDefault();
         sign_in_overlay.style.cssText = `z-index:1;transform:translateX(100%);`;
         loginForm.style.cssText = `z-index:4;transform:translateX(0%);`;
         sign_up_overlay.style.cssText = `z-index:3;transform:translateX(100%);`;
